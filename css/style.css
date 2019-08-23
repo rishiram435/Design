@@ -1,0 +1,61 @@
+.header{
+	background-color: #F1F1F1;
+	text-align: center;
+	padding: 20px;
+}
+
+.header h1 {
+	font-size: 50px;
+
+}
+
+body {
+	font-family: Arial;
+}
+
+ul.sidebar{
+	padding: 20px;
+	width: 100%;
+	transition-delay: 2s;
+}
+
+div {
+	transition-property: width;
+
+}
+
+
+
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+a.list-group-item:hover {
+	background-color: #4285F4;
+	transition: all 0.4s ease-in-out;
+}
+
+.pt-3-half {
+padding-top: 1.4rem;
+}
+
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_desc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:before {
+bottom: .5em;
+}
+
+
+
