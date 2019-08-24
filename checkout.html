@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -336,4 +337,344 @@
   <script type="text/javascript" src="js/addons/datatables.min.js"></script>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Inventory System</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- MDBootstrap Datatables  -->
+  <link href="css/addons/datatables.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+<nav class="navbar navbar-expand-xl navbar-dark primary-color-dark py-3">
+    <a class="navbar-brand" href="inventory_home.html">BLUE-SKY TRADE LINK </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="btn btn-primary">
+               <a class="nav-link waves-effect waves-light" href="manageSupplier.html">Manage Supplier <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="btn btn-primary">
+                <a class="nav-link waves-effect waves-light" href="manage_inventory.html">Manage Inventory</a>
+            </li>
+            <li class="btn btn-primary">
+                <a class="nav-link waves-effect waves-light" href="checkout.html">Checkout</a>
+            </li>
+            </li>
+            <li class="btn btn-primary">
+                <a class="nav-link waves-effect waves-light" href="transaction.html">Transaction</a>
+            </li>
+            <li class="btn btn-primary">
+                <a class="nav-link waves-effect waves-light" href="generateReport.html">Generate Report</a>
+            </li>
+           <!--  <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink"               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu dropdown-info" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item waves-effect waves-light" href="#">Action</a>
+                    <a class="dropdown-item waves-effect waves-light" href="#">Another action</a>
+                    <a class="dropdown-item waves-effect waves-light" href="#">Something else here</a>
+                </div> -->
+        </ul>
+    </div>
+</nav>
+
+<main>
+  <!-- This is the cart in our store -->
+  <h3 class="card-body text-center font-weight-bold text-uppercase py-4">Checkout</h3>
+<div class="container-fluid">
+  <div class="row">
+   <div class="col-md-6">
+      <div class="card-body">  
+      <div id="table" class="table-editable">
+        <div class="text-center">
+              <span class="table-add float-center mb-3"><a href="" class="card-body text-center font-weight-bold text-uppercase py-2">Cart</a></span>
+        </div>
+        <form class="form-inline">
+          <div class="md-form my-1">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          </div>
+        </form>
+        <table class="table table-bordered table-responsive-md table-striped text-center">
+          <thead>
+            <tr>
+              <th class="text-center">#</th>
+              <th class="text-center">Customer Name</th>
+              <th class="text-center">Product Name</th>
+              <th class="text-center">Quantity</th>
+              <th class="text-center">Measurement</th>
+              <th class="text-center">Price</th>
+              <th class="text-center">Supplier</th>
+              <th class="text-center">Sort</th>
+              <th class="text-center">Remove</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="pt-3-half" contenteditable="true">1</td>
+              <td class="pt-3-half" contenteditable="true">Rishi Ram Subedi</td>
+              <td class="pt-3-half" contenteditable="true">Screw</td>
+              <td class="pt-3-half" contenteditable="true">4</td>
+              <td class="pt-3-half" contenteditable="true">Kilogram</td>
+              <td class="pt-3-half" contenteditable="true">100</td>
+              <td class="pt-3-half" contenteditable="true">Aluminum Trade</td>
+              <td class="pt-3-half">
+                <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
+                      aria-hidden="true"></i></a></span>
+                <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"
+                      aria-hidden="true"></i></a></span>
+              </td>
+              <td>
+                <span class="table-remove"><button type="button"
+                    class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+   </div>
+<!-- This is our the cart in the store-->
+
+  <!-- This is the product available in our store -->
+    <div class="col-md-6">
+      <div class="card-body">  
+      <div id="table" class="table-editable">
+        <div class="text-center">
+              <span class="table-add float-center mb-3"><a href="" class="card-body text-center font-weight-bold text-uppercase py-2">Product</a></span>
+        </div>
+        <form class="form-inline">
+          <div class="md-form my-1">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          </div>
+        </form>
+        <table id="dtDynamicVerticalScrollExample" class="table table-striped table-bordered table-sm" cellspacing="0"
+              width="100%">
+              <thead>
+                <tr>
+                  <th class="text-center">#</th>
+                  <th class="text-center">Customer Name</th>
+                  <th class="text-center">Product Name</th>
+                  <th class="text-center">Quantity</th>
+                  <th class="text-center">Measurement</th>
+                  <th class="text-center">Price</th>
+                  <th class="text-center">Supplier</th>
+                  <th class="text-center">Sort</th>
+                  <th class="text-center">Add to Cart</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Rishi Ram Subedi</td>
+                  <td>Screw</td>
+                  <td>61</td>
+                  <td>Kilogram</td>
+                  <td>NRS 30</td>
+                  <td>Aluminum Trade</td>
+                  <td>
+                    <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
+                      aria-hidden="true"></i></a></span>
+                    <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"
+                      aria-hidden="true"></i></a></span>
+                  </td>
+                  <td>
+                    <span class="table-add float-right mb-3 mr-2"><a href="#!" class="text-success"><i
+                    class="fas fa-plus fa-2x" aria-hidden="true"></i></a></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Rishi Ram Subedi</td>
+                  <td>Screw</td>
+                  <td>61</td>
+                  <td>Kilogram</td>
+                  <td>NRS 30</td>
+                  <td>Aluminum Trade</td>
+                  <td>
+                    <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
+                      aria-hidden="true"></i></a></span>
+                    <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"
+                      aria-hidden="true"></i></a></span>
+                  </td>
+                  <td>
+                    <span class="table-add float-right mb-3 mr-2"><a href="#!" class="text-success"><i
+                    class="fas fa-plus fa-2x" aria-hidden="true"></i></a></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Rishi Ram Subedi</td>
+                  <td>Screw</td>
+                  <td>61</td>
+                  <td>Kilogram</td>
+                  <td>NRS 30</td>
+                  <td>Aluminum Trade</td>
+                  <td>
+                    <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
+                      aria-hidden="true"></i></a></span>
+                    <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"
+                      aria-hidden="true"></i></a></span>
+                  </td>
+                  <td>
+                    <span class="table-add float-right mb-3 mr-2"><a href="#!" class="text-success"><i
+                    class="fas fa-plus fa-2x" aria-hidden="true"></i></a></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Rishi Ram Subedi</td>
+                  <td>Screw</td>
+                  <td>61</td>
+                  <td>Kilogram</td>
+                  <td>NRS 30</td>
+                  <td>Aluminum Trade</td>
+                  <td>
+                    <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
+                      aria-hidden="true"></i></a></span>
+                    <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"
+                      aria-hidden="true"></i></a></span>
+                  </td>
+                  <td>
+                    <span class="table-add float-right mb-3 mr-2"><a href="#!" class="text-success"><i
+                    class="fas fa-plus fa-2x" aria-hidden="true"></i></a></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Rishi Ram Subedi</td>
+                  <td>Screw</td>
+                  <td>61</td>
+                  <td>Kilogram</td>
+                  <td>NRS 30</td>
+                  <td>Aluminum Trade</td>
+                  <td>
+                    <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
+                      aria-hidden="true"></i></a></span>
+                    <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"
+                      aria-hidden="true"></i></a></span>
+                  </td>
+                  <td>
+                    <span class="table-add float-right mb-3 mr-2"><a href="#!" class="text-success"><i
+                    class="fas fa-plus fa-2x" aria-hidden="true"></i></a></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Rishi Ram Subedi</td>
+                  <td>Screw</td>
+                  <td>61</td>
+                  <td>Kilogram</td>
+                  <td>NRS 30</td>
+                  <td>Aluminum Trade</td>
+                  <td>
+                    <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
+                      aria-hidden="true"></i></a></span>
+                    <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"
+                      aria-hidden="true"></i></a></span>
+                  </td>
+                  <td>
+                    <span class="table-add float-right mb-3 mr-2"><a href="#!" class="text-success"><i
+                    class="fas fa-plus fa-2x" aria-hidden="true"></i></a></span>
+                  </td>
+                </tr>
+               <tr>
+                  <td>1</td>
+                  <td>Rishi Ram Subedi</td>
+                  <td>Screw</td>
+                  <td>61</td>
+                  <td>Kilogram</td>
+                  <td>NRS 30</td>
+                  <td>Aluminum Trade</td>
+                  <td>
+                    <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
+                      aria-hidden="true"></i></a></span>
+                    <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"
+                      aria-hidden="true"></i></a></span>
+                  </td>
+                  <td>
+                    <span class="table-add float-right mb-3 mr-2"><a href="#!" class="text-success"><i
+                    class="fas fa-plus fa-2x" aria-hidden="true"></i></a></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Rishi Ram Subedi</td>
+                  <td>Screw</td>
+                  <td>61</td>
+                  <td>Kilogram</td>
+                  <td>NRS 30</td>
+                  <td>Aluminum Trade</td>
+                  <td>
+                    <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
+                      aria-hidden="true"></i></a></span>
+                    <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"
+                      aria-hidden="true"></i></a></span>
+                  </td>
+                  <td>
+                    <span class="table-add float-right mb-3 mr-2"><a href="#!" class="text-success"><i
+                    class="fas fa-plus fa-2x" aria-hidden="true"></i></a></span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+       </div>
+     </div>
+  </div>
+</div>
+
+<!-- This is our the prodyct in the store-->
+</main>
+
+<!-- Footer -->
+<footer class="footer page-footer font-small primary-color">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <a href="https://www.sewarow.com"> sewarow.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+  <!-- SCRIPTS -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+    $('#dtDynamicVerticalScrollExample').DataTable({
+    "scrollY": "50vh",
+    "scrollCollapse": true,
+    });
+    $('.dataTables_length').addClass('bs-select');
+    });
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- MDBootstrap Datatables  -->
+  <script type="text/javascript" src="js/addons/datatables.min.js"></script>
+</body>
+
+>>>>>>> 449ead14404df509889293c5fa6a95f72fab5bcc
 </html>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -381,4 +382,368 @@
   <script src="my_jquery.js"></script>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Inventory System</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-xl navbar-dark primary-color-dark py-3">
+    <a class="navbar-brand" href="inventory_home.html">BLUE-SKY TRADE LINK </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="btn btn-primary">
+               <a class="nav-link navbar-expand-xl waves-effect waves-light" href="manageSupplier.html">Manage Supplier <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="btn btn-primary">
+                <a class="nav-link navbar-expand-xl waves-effect waves-light" href="manage_inventory.html">Manage Inventory</a>
+            </li>
+            <li class="btn btn-primary">
+                <a class="nav-link navbar-expand-xl waves-effect waves-light" href="checkout.html">Checkout</a>
+            </li>
+            </li>
+            <li class="btn btn-primary">
+                <a class="nav-link navbar-expand-xl waves-effect waves-light" href="#">Transaction</a>
+            </li>
+            <li class="btn btn-primary">
+                <a class="nav-link navbar-expand-xl waves-effect waves-light" href="generateReport.html">Generate Report</a>
+            </li>
+           <!--  <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink"               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu dropdown-info" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item waves-effect waves-light" href="#">Action</a>
+                    <a class="dropdown-item waves-effect waves-light" href="#">Another action</a>
+                    <a class="dropdown-item waves-effect waves-light" href="#">Something else here</a>
+                </div> -->
+        </ul>
+    </div>
+</nav>
+
+<!-- Editable table -->
+<div class="container">
+  <div class="row">
+  <h3 class="card-body text-center font-weight-bold text-uppercase py-4">Inventory Details</h3>
+  <form class="form-inline">
+    <div class="md-form my-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+    </div>
+  </form>
+  <div class="card-body">
+    <div id="table" class="table-editable">
+      <table class="table table-bordered table-responsive-md table-striped text-center">
+        <thead>
+          <tr>
+            <th class="text-center">#</th>
+            <th class="text-center">Product Name</th>
+            <th class="text-center">Quantity</th>
+            <th class="text-center">Measurement</th>
+            <th class="text-center">Original Price</th>
+            <th class="text-center">Profit</th>
+            <th class="text-center">Selling Price</th>
+            <th class="text-center">Supplier</th>
+            <th class="text-center">Sort</th>
+            <th class="text-center">Remove</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="pt-3-half" contenteditable="true">1</td>
+            <td class="pt-3-half" contenteditable="true">Screw</td>
+            <td class="pt-3-half" contenteditable="true">4</td>
+            <td class="pt-3-half" contenteditable="true">Kilogram</td>
+            <td class="pt-3-half" contenteditable="true">550</td>
+            <td class="pt-3-half" contenteditable="true">200</td>
+            <td class="pt-3-half" contenteditable="true">100</td>
+            <td class="pt-3-half" contenteditable="true">Aluminum Trade</td>
+            <td class="pt-3-half">
+              <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
+                    aria-hidden="true"></i></a></span>
+              <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"
+                    aria-hidden="true"></i></a></span>
+            </td>
+            <td>
+              <span class="table-remove"><button type="button"
+                  class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+            </td>
+          </tr>
+          <!-- This is our clonable table line -->
+          <tr>
+            <td class="pt-3-half" contenteditable="true">1</td>
+            <td class="pt-3-half" contenteditable="true">Screw</td>
+            <td class="pt-3-half" contenteditable="true">4</td>
+            <td class="pt-3-half" contenteditable="true">Kilogram</td>
+            <td class="pt-3-half" contenteditable="true">550</td>
+            <td class="pt-3-half" contenteditable="true">200</td>
+            <td class="pt-3-half" contenteditable="true">100</td>
+            <td class="pt-3-half" contenteditable="true">Aluminum Trade</td>
+            <td class="pt-3-half">
+              <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
+                    aria-hidden="true"></i></a></span>
+              <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"
+                    aria-hidden="true"></i></a></span>
+            </td>
+            <td>
+              <span class="table-remove"><button type="button"
+                  class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+            </td>
+       <tr>
+            <td class="pt-3-half" contenteditable="true">1</td>
+            <td class="pt-3-half" contenteditable="true">Screw</td>
+            <td class="pt-3-half" contenteditable="true">4</td>
+            <td class="pt-3-half" contenteditable="true">Kilogram</td>
+            <td class="pt-3-half" contenteditable="true">550</td>
+            <td class="pt-3-half" contenteditable="true">200</td>
+            <td class="pt-3-half" contenteditable="true">100</td>
+            <td class="pt-3-half" contenteditable="true">Aluminum Trade</td>
+            <td class="pt-3-half">
+              <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
+                    aria-hidden="true"></i></a></span>
+              <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"
+                    aria-hidden="true"></i></a></span>
+            </td>
+            <td>
+              <span class="table-remove"><button type="button"
+                  class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+            </td>
+          </tr>
+          <!-- This is our clonable table line -->
+          <tr>
+            <td class="pt-3-half" contenteditable="true">1</td>
+            <td class="pt-3-half" contenteditable="true">Screw</td>
+            <td class="pt-3-half" contenteditable="true">4</td>
+            <td class="pt-3-half" contenteditable="true">Kilogram</td>
+            <td class="pt-3-half" contenteditable="true">550</td>
+            <td class="pt-3-half" contenteditable="true">200</td>
+            <td class="pt-3-half" contenteditable="true">100</td>
+            <td class="pt-3-half" contenteditable="true">Aluminum Trade</td>
+            <td class="pt-3-half">
+              <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up"
+                    aria-hidden="true"></i></a></span>
+              <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down"
+                    aria-hidden="true"></i></a></span>
+            </td>
+            <td>
+              <span class="table-remove"><button type="button"
+                  class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+      <div class="modal fade" id="orangeModalSubscription" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-notify modal-warning" role="document">
+        <!--Content-->
+        <div class="modal-content">
+          <!--Header-->
+          <div class="modal-header primary-color-dark text-center">
+            <h4 class="modal-title white-text font-weight-bold py-2">Add Inventory</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true" class="white-text">&times;</span>
+            </button>
+          </div>
+
+          <!--Body-->
+          <div class="modal-body">
+            <div class="md-form mb-5">
+              <i class="fab fa-500px prefix grey-text"></i>
+              <input type="text" id="form3" class="form-control validate">
+              <label data-error="wrong" data-success="right" for="validationCustom01" required>Product Name</label>
+            </div>
+
+            <div class="md-form">
+              <i class="fas fa-sort-amount-up prefix grey-text"></i>
+              <input type="number" id="form2" min="0" class="form-control validate">
+              <label data-error="wrong" data-success="right" for="form2" required>Quantity</label>
+            </div>
+
+            <div class="md-form">
+              <i class="fas fa-ruler prefix grey-text"></i>
+              <input type="text" id="form2" class="form-control validate">
+              <label data-error="wrong" data-success="right" for="form2" required>Measurement</label>
+            </div>
+
+            <div class="md-form">
+              <i class="fas fa-money-check-alt prefix grey-text"></i>
+              <input type="number" id="form2" class="form-control validate">
+              <label data-error="wrong" data-success="right" for="form2" required>Original Price</label>
+            </div>
+
+            <div class="md-form">
+              <i class="fas fa-rupee-sign prefix grey-text"></i>
+              <input type="number" id="form2" class="form-control validate">
+              <label data-error="wrong" data-success="right" for="form2" required>Profit</label>
+            </div>
+
+            <div class="md-form">
+              <i class="fas fa-wallet prefix grey-text"></i>
+              <input type="number" id="form2" min="0" class="form-control validate">
+              <label data-error="wrong" data-success="right" for="form2">Selling Price</label>
+            </div>
+
+            <div class="md-form">
+              <i class="fas fa-truck-loading prefix grey-text"></i>
+              <input type="text" id="form2" class="form-control validate">
+              <label data-error="wrong" data-success="right" for="form2">Supplier</label>
+            </div>
+
+            
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer justify-content-center">
+            <a type="button" class="btn btn-outline-warning waves-effect">Send <i class="fas fa-paper-plane-o ml-1"></i></a>
+          </div>
+        </div>
+        <!--/.Content-->
+      </div>
+    </div>
+
+    <div class="text-center">
+      <span class="table-add float-right mb-3 mr-2"><a href="#!" class="text-success" data-toggle="modal" data-target="#orangeModalSubscription"><i
+            class="fas fa-plus fa-2x" aria-hidden="true"></i></a></span>
+    </div>
+ </div>
+</div>
+<!-- Footer -->
+<footer class="footer page-footer font-small primary-color">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2019 Copyright:
+    <a href="https://www.sewarow.com"> sewarow.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+  <!-- SCRIPTS -->
+  <script>
+
+     const $tableID = $('#table');
+     const $BTN = $('#export-btn');
+     const $EXPORT = $('#export');
+
+     const newTr = `
+    <tr class="hide">
+      <td class="pt-3-half" contenteditable="true">Example</td>
+      <td class="pt-3-half" contenteditable="true">Example</td>
+      <td class="pt-3-half" contenteditable="true">Example</td>
+      <td class="pt-3-half" contenteditable="true">Example</td>
+      <td class="pt-3-half" contenteditable="true">Example</td>
+      <td class="pt-3-half">
+        <span class="table-up"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-up" aria-hidden="true"></i></a></span>
+        <span class="table-down"><a href="#!" class="indigo-text"><i class="fas fa-long-arrow-alt-down" aria-hidden="true"></i></a></span>
+      </td>
+      <td>
+        <span class="table-remove"><button type="button" class="btn btn-danger btn-rounded btn-sm my-0 waves-effect waves-light">Remove</button></span>
+      </td>
+    </tr>`;
+
+     $('.table-add').on('click', 'i', () => {
+
+       const $clone = $tableID.find('tbody tr').last().clone(true).removeClass('hide table-line');
+
+       if ($tableID.find('tbody tr').length === 0) {
+
+         $('tbody').append(newTr);
+       }
+
+       $tableID.find('table').append($clone);
+     });
+
+     $tableID.on('click', '.table-remove', function () {
+
+       $(this).parents('tr').detach();
+     });
+
+     $tableID.on('click', '.table-up', function () {
+
+       const $row = $(this).parents('tr');
+
+       if ($row.index() === 1) {
+         return;
+       }
+
+       $row.prev().before($row.get(0));
+     });
+
+     $tableID.on('click', '.table-down', function () {
+
+       const $row = $(this).parents('tr');
+       $row.next().after($row.get(0));
+     });
+
+     // A few jQuery helpers for exporting only
+     jQuery.fn.pop = [].pop;
+     jQuery.fn.shift = [].shift;
+
+     $BTN.on('click', () => {
+
+       const $rows = $tableID.find('tr:not(:hidden)');
+       const headers = [];
+       const data = [];
+
+       // Get the headers (add special header logic here)
+       $($rows.shift()).find('th:not(:empty)').each(function () {
+
+         headers.push($(this).text().toLowerCase());
+       });
+
+       // Turn all existing rows into a loopable array
+       $rows.each(function () {
+         const $td = $(this).find('td');
+         const h = {};
+
+         // Use the headers from earlier to name our hash keys
+         headers.forEach((header, i) => {
+
+           h[header] = $td.eq(i).text();
+         });
+
+         data.push(h);
+       });
+
+       // Output the result
+       $EXPORT.text(JSON.stringify(data));
+     });
+   
+
+  </script>
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="jquery-1.6.1.js"></script>
+  <script src="my_jquery.js"></script>
+</body>
+
+>>>>>>> 449ead14404df509889293c5fa6a95f72fab5bcc
 </html>
